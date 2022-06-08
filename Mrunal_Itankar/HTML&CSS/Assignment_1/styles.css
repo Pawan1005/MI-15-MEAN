@@ -1,0 +1,22 @@
+body{
+    background-image: url(Images/img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    padding-top: 13%;
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(234, 188, 49);
+}
+p{
+    font-size: 1.5rem;
+}
