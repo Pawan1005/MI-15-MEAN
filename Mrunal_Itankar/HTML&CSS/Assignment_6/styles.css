@@ -1,0 +1,77 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    border: 1px solid gray;
+}
+h1{
+    margin-bottom: 3.5%;
+}
+h1, h3{
+    background-color: rgb(196, 191, 252);
+    text-align: right;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.form-fname{
+    height: 40px;
+    font-weight: bold;
+}
+
+.form-lname{
+    height: 40px;
+    font-weight: bold;
+}
+.form-gender{
+    height: 40px;
+}
+.gender, .age, .skillset, .areaex {
+    font-weight: bold;
+}
+.form-age label{
+    padding: 0 35px 0 0;
+}
+
+.form-academic{
+    margin-bottom: 25px;
+}
+.form-skill{
+    height: 40px;
+}
+.form-skill label{
+    padding: 0 130px 0 0;
+}
+.form-highqa{
+    height: 40px;
+    font-weight: bold;
+}
+.form-highqa label{
+    padding: 0 37px 0 0;
+}
+.form-uni{
+    height: 40px;
+    font-weight: bold;
+}
+.form-uni label{
+    padding: 0 120px 0 0;
+}
+.form-areaex label{
+    padding: 0 61px 0 0;
+    float: left;
+}
+.upload{
+    font-weight: bold;
+    padding: 0 80px 0 0;
+}
+.comment{
+    font-weight: bold;
+    padding: 0 127px 0 0;
+    float: left;
+} 
+.submit{
+    margin: 1% 50%;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 18px;
+}
