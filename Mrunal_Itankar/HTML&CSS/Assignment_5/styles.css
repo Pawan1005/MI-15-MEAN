@@ -1,0 +1,29 @@
+body {
+  background-image: url(Images/img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 445px;
+}
+p {
+  text-align: left;
+  background-color: rgba(248, 191, 86, 0.334);
+  text-align: justify;
+}
+
+h3 {
+  text-align: right;
+  background-color: rgba(249, 181, 54, 0.525);
+}
+.list {
+  list-style: square;
+  color: green;
+}
+ul li {
+  display: inline;
+  padding: 10px 35px;
+}
+a {
+  text-decoration: none;
+}
