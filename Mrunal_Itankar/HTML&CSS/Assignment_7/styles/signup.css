@@ -1,0 +1,57 @@
+
+
+.wraper{
+    background-image: url('../Images/img1.jpg');
+    width: 98%;
+    float: left;
+    padding: 1%;
+    height: 665px;
+}
+
+.form-personal-detail, .form-professional-detail{
+    color: rgb(250, 250, 255);
+    width: 50%;
+    float: left;
+}
+.form-professional-detail{
+    padding-left: 1%;
+    width: 49%;
+}
+
+.form-field, .form-skill,.form-highqa, .form-uni, .form-areaex{
+    margin-bottom: 1%;
+}
+.form-field label{
+    width: 27%;
+    float: left;
+}
+.form-login, .form-academic{
+    padding: 2%;
+}
+.form-skill label:nth-child(1), .form-highqa label:nth-child(1), .form-uni label:nth-child(1), .form-areaex label:nth-child(1){
+width: 25%;
+float: left;
+}
+.form-professional-detail fieldset{
+    margin-bottom: 2%;
+}
+
+.final-submit{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.final-submit button{
+    border: none;
+    background-color: rgb(38, 38, 245);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    color: white;
+    margin-top: 1%;
+}
+.details-form{
+    width: 96%;
+    margin: 0 auto;
+}
