@@ -20,15 +20,14 @@
 .card a{
     text-align: right;
 }
-
+.card:hover {
+  cursor: pointer;
+}
 .main-row {
   margin-top: 2%;
 }
 .right-row {
   margin-left: 2%;
-}
-.card:hover {
-  cursor: pointer;
 }
 .para{
   color: gray;
@@ -40,7 +39,6 @@
 }
 .option{
   color: gray;
-  padding: 2%;
   font-size: 20px;
 }
 .date{
