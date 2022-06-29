@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+.img1{
+    height: 15%;
+    width: 15%;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+.div1{
+    font-size: 30px;
+}
+.img2{
+    height: 15%;
+    width: 15%;
+    padding: 30px;
+    margin: 10px;
+    float: right;
+}
+.div2{
+    font-size: 30px;
+}
