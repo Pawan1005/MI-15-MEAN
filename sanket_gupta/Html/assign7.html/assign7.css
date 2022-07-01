@@ -1,0 +1,48 @@
+.p1{
+    background-color: rgb(239, 240, 186);
+}
+.img1{
+    width: 80%;
+    border: 3.5px solid black;
+}
+.img2{
+    margin: 2%;
+    padding: 20px;
+    float:right;
+    border: 3.5px solid black;
+}
+.img3{
+    padding: 10px;
+    margin: 5%;
+    border: 3.5px solid black;
+}
+.img4{
+    padding: 10px;
+    margin: 5%;
+    border: 3.5px solid black;
+    width: 82%;
+}
+.a{
+    font-size: 400%;
+    border: 2px solid black;
+}
+.head{
+    background: skyblue;
+    text-align: center;
+}
+.main{
+    background: rgb(178, 245, 91);
+    text-align: center;
+    border: 2px solid black;
+    
+}
+.b2{
+    background-color: rgb(167, 196, 240);
+    font-size: 400% black;
+}
+.div8{
+    background: rgb(205, 243, 205);
+}
+.head1{
+    border: 2px solid black;
+}
