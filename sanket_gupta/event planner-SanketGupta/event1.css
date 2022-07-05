@@ -1,0 +1,83 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: white;
+
+}
+.home {
+    background-color: rgb(240, 250, 146);
+    text-emphasis-color: white;
+    text-align: end;
+}
+
+h1 a:link{
+    color: rgb(194, 90, 42);
+}
+.ser{
+    background-color: yellowgreen;    
+}
+
+.img1{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: 20%;
+    float: right;
+}
+.img2{
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 40%;
+    float: center;
+
+}
+.img3{
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 40%;
+    float: center;   
+}
+.form1{
+    margin: 2%;
+    width: 20%;
+    
+}
+.img5{
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+.img4{
+    width: 100%;
+}
+
+.img6{
+    padding: 10px;
+    float: right;
+}
+.ev a:active{
+    color: rgb(138, 165, 42);
+}
+.des a:active{
+    color: aqua;
+}
+.ser{
+    text-align: center;
+    font-family: sans-serif;
+}
+.goa{
+    width: 100%;
+    padding: 2%;
+}
+.mussoorie{
+    width: 100%;
+}
+.udaipur{
+    width: 100%;
+}
+.plan :visited{
+    color: blueviolet;
+}
