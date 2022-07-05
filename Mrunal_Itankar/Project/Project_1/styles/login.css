@@ -1,0 +1,26 @@
+/* Login Page */
+body{
+    background-color: rgb(238,235,235);
+    font-family: "Baloo Thambi 2", cursive;
+
+}
+.login{
+    text-align: center;
+    width: 30%;
+    font-size: 25px;
+    border: 4px solid;
+    padding: 2%;
+}
+.btn{
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 200px;
+    outline: none;
+    border: none;
+    display: inline-block;
+}
+.form-control{
+    outline: none;
+    border: none;
+}

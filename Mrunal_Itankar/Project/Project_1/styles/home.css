@@ -1,0 +1,114 @@
+/* font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Baloo Thambi 2", cursive;
+}
+.nav-link {
+  color: black;
+  font-weight: 600;
+}
+.navbar-brand {
+  color: black;
+  font-weight: 700;
+}
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Project/Project_1/Images/img1.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.card {
+  border: none;
+}
+.main select {
+  height: 40px;
+  width: 90%;
+  outline: none;
+  padding: 0 20px;
+}
+.main span {
+  color: rgb(104, 89, 89);
+  font-weight: 600;
+}
+.main .btn1 {
+  background-color: coral;
+  color: white;
+  outline: none;
+  border: none;
+  width: 90%;
+  height: 40px;
+  margin-top: 32px;
+}
+.btn1:hover {
+  background-color: tomato;
+  transition: 0.5s;
+}
+.land {
+  background-color: white;
+}
+.btn2 {
+  background: black;
+  color: white;
+  height: 45px;
+  width: 200px;
+  outline: none;
+  border: none;
+}
+.rent{
+    background-color: rgb(238,235,235) ;
+}
+
+.btnc{
+    height: 45px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    padding: 10px;
+    font-weight: 500;
+}
+.rent h1{
+    font-weight: 700;
+}
+.home{
+    background-color: rgb(238,235,235) ;
+}
+.home h1{
+    font-weight: 700;
+}
+.btnf{
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 200px;
+    outline: none;
+    border: none;
+    display: inline-block;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.fab{
+    font-size: 25px;
+    color: gray;
+}
+.fab:hover{
+    color: white;
+    transition: 0.5s;
+}

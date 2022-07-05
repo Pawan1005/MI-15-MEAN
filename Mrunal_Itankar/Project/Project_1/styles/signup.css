@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(238,235,235);
+    font-family: "Baloo Thambi 2", cursive;
+}
+.nav-link {
+    color: black;
+    font-weight: 600;
+  }
+  .navbar-brand {
+    color: black;
+    font-weight: 700;
+  }
+.form-personal-detail{
+    color: black;
+    width: 100%;
+    float: left;
+}
+.form-field label{
+    width: 40%;
+    float: left;
+}
+.final-submit{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.final-submit button{
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 200px;
+    outline: none;
+    border: none;
+    display: inline-block;
+}
+.details-form{
+    width: 30%;
+}
