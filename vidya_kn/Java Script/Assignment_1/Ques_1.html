@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ques_1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<script>
+    function method1(){
+    var x = document.getElementById("number 1").value;
+    var y = document.getElementById("number 2").value;
+    var z;
+    z = x;
+    x = y;
+    y = z;
+    document.getElementById("output 1").textContent = x;
+    document.getElementById("output 2").textContent = y;
+    
+}
+function method2(){
+    var x = document.getElementById("number 2").value;
+    var y = document.getElementById("number 1").value;
+    
+    document.getElementById("output 3").textContent = x;
+    document.getElementById("output 4").textContent = y;
+    
+}
+
+</script>
+
+<body>
+    <h1>Swap Two Numbers</h1>
+    A:<input type="number" id="number 1">
+    B:<input type="number" id="number 2">
+    <button class="btn btn-outline-info" type="button" onclick="method1()">Method 1</button>
+    <button class="btn btn-outline-info" type="button" onclick="method2()">Method 2</button>
+    <h3>Method 1:With Temporary Variable</h3>
+    
+    <p>After Swapping (Method 1)- A: <span id="output 1"></span> B: <span id="output 2"></span></p>
+    <h3>Method 2:Without Temporary Variable </h3>
+    <p>After Swapping (Method 2)- A: <span id="output 3"></span> B: <span id="output 4"></span></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    </body>
+     </html> 
