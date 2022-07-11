@@ -4,10 +4,11 @@ var numberColumn = document.getElementById("columnsinput").value;
 var stringRectangle = '';
 for(var i = 1; i <= numberRow; i++){
     for(var j = 1; j <= numberColumn; j++){
-        stringRectangle += '*';
+        stringRectangle += '*';    
     }
-    stringRectangle += '\n';
+    
+    stringRectangle += '<br>';
 }
-// document.getElementById("finaloutput").textContent = stringRectangle;
-console.log(stringRectangle);
+document.getElementById("finaloutput").innerHTML = stringRectangle;
+// console.log(stringRectangle);
 }
