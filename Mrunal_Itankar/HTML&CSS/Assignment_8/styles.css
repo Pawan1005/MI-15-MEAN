@@ -1,0 +1,33 @@
+body{
+    margin: 0 0.5%;
+}
+.page{
+    background-color: rgb(45, 248, 255);
+    padding: 2%;
+    width: 50%;
+    float: left;
+}
+
+.uppersection, .middlesection, .bottomsection {
+  width: 100%;
+  float: left;
+}
+.upperimg, .middleimg, .bottomimg {
+  width: 15%;
+  height: 150px;
+  float: left;
+  
+}
+.uppersection p, .bottomsection p {    
+       width: 75%;
+        float: left;
+        padding-left: 7%;
+        margin: 0;
+        
+}
+.middlesection p{
+        width: 75%;
+        float: left;
+        padding-right: 10%;
+        margin: 0;
+}
