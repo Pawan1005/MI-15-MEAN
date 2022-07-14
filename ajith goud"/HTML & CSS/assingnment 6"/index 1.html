@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>MI-15 Intern HTML Assesment</h1>
+    <hr>
+    <form action="">
+        <section class="personal">
+            <h3><i>Personal Details</i></h3>
+            <div class="form-fname">
+                <label for="fname" class="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="First Name">
+            </div>
+
+            <div class="form-lname">
+                <label for="lname" class="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Last Name">
+            </div>
+            <div class="form-gender">
+                <label for="gender" class="gender">Gender:</label>
+                <input type="radio" class="gender" name="gender" value="male">Male
+                <input type="radio" class="gender" name="gender" value="female">Female
+                <input type="radio" class="gender" name="gender" value="other">Other
+            </div>
+            <div class="form-age">
+                <label for="age" class="age">Age:</label>
+                <input type="radio" name="age" id="">
+                <label for="age1">Less than 18</label>
+                <input type="radio" name="age" id="" checked>
+                <label for="age2">18-25</label>
+                <input type="radio" name="age" id="">
+                <label for="age3">26-40</label>
+            </div>
+        </section>
+
+        <h3><i>Professional Details</i></h3>
+        <div class="form-academic">
+            <fieldset>
+                <legend>Academic Details</legend>
+                <div class="form-skill">
+                    <label for="skillset" class="skillset">Skill Set:</label>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" id="java" name="java" value="Java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="oracle" name="oracle" value="Oracle">
+                    <label for="oracle">Oracle</label>
+                </div>
+                <div class="form-highqa">
+                    <label for="highestqualification" class="highqa">Highest Qualification:</label>
+                    <select name="highestqualification" id="qualification">
+                        <option value="diplomaincomputerscience">Diploma in Computer Science</option>
+                        <option value="sciencegraduate">Science Graduate</option>
+                        <option value="bachelorinengg.">Bachelor in Engg.</option>
+                        <option value="mastersincomputerscience">Masters in Computer Science</option>
+                        <option value="mastersinengg.">Masters in Engg.</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-uni">
+                    <label for="university" class="uni">University:</label>
+                    <select name="university" id="university">
+                        <option value="other">Select your University</option>
+                        <option value="mumbaiuniversity">Mumbai University</option>
+                        <option value="puneuniversity">Pune University</option>
+                        <option value="chennaiuniversity">Chennai University</option>
+                        <option value="nagpuruniversity">Nagpur University</option>
+                        <option value="badodauniversity">Badoda University</option>
+                    </select>
+                </div>
+                <div class="form-areaex">
+                    <label for="areaofexpertise" class="areaex">Areas of Expertise:</label>
+                    <select name="areaofexpertise" id="areaofexpertise" multiple>
+                        <option value="software">Software</option>
+                        <option value="training">Training</option>
+                        <option value="networking">Networking</option>
+                        <option value="management">Management</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                    You can select multiple skills.
+                </div> 
+            </fieldset>
+        </div>
+
+        <fieldset>
+            <legend>Resume</legend>
+            <label for="myfile" class="upload">Upload Resume:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <label for="name" class="comment">Comment:</label>
+            <textarea rows="10" cols="50" name="comment" form="">Enter text here...</textarea>
+        </fieldset>
+        <input type="submit" class="submit">
+
+    </form>
+</body>
+</html>
