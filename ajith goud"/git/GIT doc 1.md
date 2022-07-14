@@ -1,0 +1,100 @@
+Name: M.AJITH GOUD
+
+1. What are the advantages of using Git?
+ 1. Performance
+Git performs very strongly and reliably when compared to other version control systems. New code changes can be easily committed, version branches can be effortlessly compared and merged, and code can also be optimized to perform better.
+2. Security
+Git is designed specially to maintain the integrity of source code.
+3. Flexibility
+A key design objective of Git is the kind of flexibility it offers to support several kinds of nonlinear development workflows and its efficiency in handling both small scale and large-scale projects as well as protocols.
+4. Wide acceptance
+Git offers the type of performance, functionality, security, and flexibility that most developers and teams need to develop their projects. 
+5. Quality open-source project
+Git is a widely supported open-source project with over ten years of operational history. People maintaining the project are very well matured and possess a long-term vision to meet the long-term needs of users by releasing staged upgrades at regular intervals of time to improve functionality as well as usability.
+
+2. Name a few Git commands with their function.
+•	$ git config --global user.name "[name]"
+	$ git config --global user.email "[email address]"
+	Sets the name and email you want attached to your commits transactions.
+
+•	$ git branch [branch-name]
+	Creates a new branch.
+
+•	$ git checkout [branch-name]
+	Switches to the specified branch and updates the working directory.
+•	$ git branch -d [branch-name]
+	Deletes the specified branch.
+	
+•	$ git merge [branch]
+	Combines the specified branch's history into the current branch.	
+
+3. What is a Git repository?
+•	A Git repository tracks and saves the history of all changes made to the files in a Git project. 
+•	It saves this data in a directory called .git, also known as the repository folder. 
+•	It uses a version control system to track all changes made to the project and save them in the repository.
+
+4. What’s the difference between Git and GitHub?
+Git	GitHub
+
+Git is a command-line tool	GitHub is a graphical user interface
+
+
+
+Git is focused on version control and code sharing.
+	GitHub is focused on centralized source code hosting.
+
+
+
+Git is open-source licensed.
+	GitHub includes a free-tier and pay-for-use tier.
+
+
+
+Git is a version control system to manage source code history.	GitHub is a hosting service for Git repositories.
+
+
+
+5. What does the git push command do?
+•	Uploads all local branch commits to GitHub.
+
+6. Difference between git fetch and git pull
+git fetch	git pull
+
+Gives the information of a new change from a remote repository without merging into the current branch
+	Brings the copy of all the changes from a remote repository and merges them into the current branch
+
+
+
+Review of commits and changes can be done	Updates the changes to the local repository immediately.
+
+
+Repository data is updated in the .git directory	The local repository is updated directly
+
+No possibility of merge conflicts	
+Merge conflicts are possible if the remote and the local repositories have done change at the same place
+
+7. What does git clone do?
+•	Clone a repository that already exists on GitHub, including all of the files, branches and commits.
+8. What do you understand about the Staging area in Git?
+•	The staging area is like a rough draft space, it's where you can git add the version of a file or multiple files that you want to save in your next commit.
+9. What is the use of the git config command?
+•	The git config command is a convenience function that is used to set Git configuration values on a global or local project level. 
+•	These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file.
+
+10. What is the difference between fork, branch, and clone?
+
+Fork	Clone	Branch
+Forking is done on the GitHub Account	
+	
+Cloning is done using Git	
+A branch is an isolated environment to add, modify or delete a portion of the code without messing with the main code base.
+
+
+Forking a repository creates a copy of the original repository on our GitHub account.	
+Cloning a repository creates a copy of the original repository on our local machine.	
+Branching is a cloning operation in Git executed on a single repository.
+
+
+Forking is a concept.	
+Cloning is a process.	
+The purpose is to divert from the original code base without affecting other developers work.
