@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ques_2</title>
+</head>
+<body>
+    <p id="demo1"></p> 
+    <button onclick="myFunction1()">cancel</button> 
+    <p id="demo2"></p>
+    <h3>Names(Asc)</h3>
+    <p id="demo3">Name(Asc)</p>
+    <h3>Names(Desc)</h3>
+    <p id="demo4">Name(Desc)</p>
+  <script>
+    const names = [ "ABHI", "MANASA", "RIYA", "TEENA",];
+document.getElementById("demo1").innerHTML = names.toString();
+function myFunction1() {
+  names.sort();
+  document.getElementById("demo1").innerHTML = null;
+}
+document.getElementById("demo2").innerHTML = names.join(" ~ ");
+names.sort();
+document.getElementById("demo3").innerHTML = names;
+names.reverse();
+document.getElementById("demo4").innerHTML = names;
+</script>
+
+   
+</body>
+</html>
