@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 16 - Q2</title>
+    </head>
+    <style>
+        #p1{
+            text-align: center;
+            padding: 70px;
+        }
+    </style>
+    <body>
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+           Repudiandae dolor impedit id corrupti quam nostrum aliquid 
+           earum! Laborum accusamus veniam neque numquam cupiditate eveniet 
+           voluptatum quod delectus. Reprehenderit magni molestias laborum 
+           officiis cumque iste veritatis quibusdam voluptate, recusandae 
+           vero perferendis laudantium autem, qui aut, laboriosam quas fugit cum natus accusantium.</p>
+        <fieldset>
+            <legend>Colors</legend>
+            <legend> <button onclick="myFunction1()">Red</button></legend>
+            <legend> <button onclick="myFunction2()">Blue</button></legend>
+            <legend> <button onclick="myFunction3()">Green</button></legend>
+        </fieldset>
+        <fieldset>
+            <legend>Size</legend>
+            <legend><button onclick="myFunction4()">Small</button></legend>
+            <legend><button onclick="myFunction5()">Large</button></legend>
+            <legend><button onclick="myFunction6()">Extra Large</button></legend>
+        </fieldset>
+        <fieldset>
+            <legend>Font</legend>
+            <legend><button onclick="myFunction7()">Impact</button></legend>
+            <legend><button onclick="myFunction8()">Courier New</button></legend>
+            <legend><button onclick="myFunction9()">Times New Roman</button></legend>
+        </fieldset>
+
+        <script>
+            function myFunction1() {
+                document.getElementById("p1").style.color = "Red";
+            }
+            function myFunction2() {
+                document.getElementById("p1").style.color = "Blue";
+            }
+            function myFunction3() {
+                document.getElementById("p1").style.color = "Green";
+            }
+            function myFunction4() {
+                document.getElementById("p1").style.fontSize = "small";
+            }
+            function myFunction5() {
+                document.getElementById("p1").style.fontSize = "large";
+            }
+            function myFunction6() {
+                document.getElementById("p1").style.fontSize = "x-large";
+            }
+            function myFunction7() {
+                document.getElementById("p1").style.fontFamily = "Impact,Charcoal,sans-serif";
+            }
+            function myFunction8() {
+                document.getElementById("p1").style.fontFamily = "Courier New, Courier, monospace";
+            }
+            function myFunction9() {
+                document.getElementById("p1").style.fontFamily = "Times New Roman, Times, serif";
+            }
+        </script>
+    </body>
+</html>
