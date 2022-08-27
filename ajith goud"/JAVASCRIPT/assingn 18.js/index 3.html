@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 18 - Q3</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Check the discount on shopping</h2><br>
+        <label> Enter Shopping amount: </label>
+        <input type="text" id="num"> <br> <br>
+        <button onclick="shop()"> Show</button><br><br>
+        <div id="demo"></div>
+
+        <script>
+            function shop(){
+                var price = Number(document.getElementById('num').value);
+                //var discount = price - ( price*discount/100 );
+                if(price>1000){
+                    discount = price*0.10;
+
+                }
+                else if(price<1000){
+                    discount = price*0.05;
+                }
+                Total = price - discount;
+                document.getElementById('demo').innerHTML = "Total amount after Discount: " + Total;
+            }
+        </script>
+    </body>
+</html>

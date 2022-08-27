@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 18 - Q1</title>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Check the number is Even or Odd</h2><br>
+        <label> Enter the number : </label>
+        <input type="text" id="first"> <br> <br>
+        <button onclick="even_odd()"> Submit</button>
+        <div id="demo"></div>
+
+        <script>
+            function even_odd() {
+                var num = Number(document.getElementById("first").value);
+                var regexp = /\d/;
+                if (regexp.test(num)) {
+                    alert("It is a Valid number");
+                } 
+                if (num % 2 == 0) {
+                    document.getElementById('demo').innerHTML = "<br> It is an Even number ";
+                }
+                else if(!num%2==0) {
+                    document.getElementById('demo').innerHTML = "<br> It is an Odd number ";
+                }
+                else if(!regexp.test(num)) {
+                    alert("It is not a number....Enter a valid number");
+                }
+                
+            }
+
+        </script>
+    </body>
+</html>
