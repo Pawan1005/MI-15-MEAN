@@ -1,0 +1,1 @@
+create table offices(officeCode varchar(10) primary key not null, postalcode varchar(10), city varchar(20), country varchar(10) default 'USA');
