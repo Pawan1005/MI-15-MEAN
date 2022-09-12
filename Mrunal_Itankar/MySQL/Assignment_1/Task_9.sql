@@ -1,0 +1,1 @@
+select empId, empFname from employee order by empFname asc; 
