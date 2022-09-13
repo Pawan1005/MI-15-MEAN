@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        function getCapital() {
+      var capitals = ["Kabul", "Beijing", "Cario", "New Delhi", "Rome"];
+      var i = document.getElementById("countries").selectedOptions[0].value;
+      document.getElementById("output").value = capitals[i];
+    }
+    </script>
+    <div>
+        <fieldset>
+            <h4>Select country to find its Capital</h4>
+            <div>
+                <select id="countries" onchange=getCapital()>
+                    <option value="" selected>Select Country</option>
+                    <option value="0">Afghanistan</option>
+                    <option value="1">China</option>
+                    <option value="2">Egypta</option>
+                    <option value="3">India</option>
+                    <option value="4">Italy</option>
+                </select>
+                <select id="output">
+                    <option selected>Select Capital</option>                                      
+                    <option >Kabul</option>                                      
+                    <option >Beijing</option>                                      
+                    <option >Cario</option>                                      
+                    <option >New Delhi</option>                                      
+                    <option >Rome</option>                                      
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

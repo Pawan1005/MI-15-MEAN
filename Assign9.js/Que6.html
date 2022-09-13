@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    the word in string is:
+    <script>
+
+
+//  var str=prompt("enter a string")
+//       function countWords(str) {
+//          str = str.replace(/(^\s*)|(\s*$)/gi,"");
+//         str = str.replace(/[ ]{2,}/gi," ");
+//          str = str.replace(/\n /,"\n");
+//       // str = str.split(' ').length - 1;
+
+//          return str.split(' ').length;
+//       }
+//       document.write(countWords(str));
+   
+// var spaces = prompt("enter a string");
+
+//   for(var i = 0; i < str.length; i++) {
+//     if (str[i] === ' ') {
+//        spaces ++;
+//   }
+//   return spaces - 1;
+//   document.write(spaces)
+
+// }
+var str = prompt("Enter String.");
+var myArray = str.split(" ");
+var total = myArray.length;
+// console.log(total);
+var spacecount = myArray.length - 1;
+document.write("Total Words:" + total + "<br>" + "Total Spaces:" + spacecount);
+
+
+   </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
