@@ -2,7 +2,7 @@ create database studentTable;
 show databases;
 use studentTable;
 select database();
-create table course(courseId int primary key);
+create table course(courseId int primary key, courseName varchar(15));
 CREATE TABLE student (
     stdId INT PRIMARY KEY,
     studName VARCHAR(20) NOT NULL,

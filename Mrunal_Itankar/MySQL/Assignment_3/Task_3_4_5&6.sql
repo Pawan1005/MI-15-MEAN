@@ -1,0 +1,11 @@
+alter table course add courseName varchar(15);  
+insert into course values(101,'Computers');
+insert into course values(102,'Electronics');
+insert into course values(103,'Mechanical');
+insert into course values(104,'Civil');
+alter table course add courseCode varchar(4);
+select * from course;
+update course set courseName = 'COMP' where courseId = 101;
+update course set courseName = 'ENTC' where courseId = 102;
+update course set courseName = 'MECH' where courseId = 103;
+update course set courseName = 'CIVL' where courseId = 104;
