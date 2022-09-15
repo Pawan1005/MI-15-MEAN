@@ -1,0 +1,2 @@
+CREATE TABLE DUP_EMP AS SELECT * FROM course;
+DELETE FROM DUP_EMP WHERE courseName = 'Mechanical';

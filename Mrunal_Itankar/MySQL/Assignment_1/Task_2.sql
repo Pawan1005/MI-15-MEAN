@@ -9,6 +9,6 @@ CREATE TABLE student (
     studAadhar VARCHAR(12) UNIQUE,
     mobileNo VARCHAR(8),
     studCourseId int,
-    streams VARCHAR(10) CHECK (streams = 'science' OR 'commerce'),
+    streams VARCHAR(10) CHECK (streams= 'science' OR  streams='commerce'),
     FOREIGN KEY (studCourseId) REFERENCES course (courseId)
 );

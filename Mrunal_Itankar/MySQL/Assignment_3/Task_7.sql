@@ -4,6 +4,6 @@ insert into student values(4, 'Prasad', '1234567893', '9999833448',null, 'scienc
 insert into student values(5, 'Mahesh', '1234567894', '9999833449',null, 'science', 'nagpur', '1996-05-20');
 insert into student values(6, 'Pranali', '1234567895', '9999833440',null, 'commerce', 'nagpur', '1994-01-19');
 insert into student values(7, 'Diksha', '1234567896', '9999833441',null, 'commerce', 'mumbai', '1994-12-02');
-insert into student values(8, 'Shubhbam', '1234567897', '9999833442',null, 'science', 'camp', '19965-10-08');
+insert into student values(8, 'Shubham', '1234567897', '9999833442',null, 'science', 'camp', '1995-10-08');
 insert into student values(9, 'Raksha', '1234567898', '9999833443',null, 'science', 'mumbai', '1993-12-06');
 insert into student values(10, 'Ritesh', '1234567899', '9999833444',null, 'commerce', 'camp', '1996-12-15');
