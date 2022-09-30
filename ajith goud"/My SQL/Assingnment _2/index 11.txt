@@ -1,0 +1,6 @@
+//display all the employees who are sales Rep?
+select e.firstname, e.lastname, e.employeeNumber
+from employees e 
+where e.employeeNumber not in (select c.salesRepEmployeeNumber from customers c)
+
+

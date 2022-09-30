@@ -1,0 +1,6 @@
+//display the customer name, phone number, city, country of all the customers?
+SELECT city ,group_concat(customerName) as all_customer
+FROM customers group by city
+
+
+

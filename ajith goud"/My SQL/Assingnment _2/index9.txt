@@ -1,0 +1,1 @@
+//display the product code,Name,product description and quantity of all the products whose product line is motorcycles and quantity in stock is greater than 6000.?

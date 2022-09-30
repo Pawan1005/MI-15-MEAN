@@ -1,0 +1,11 @@
+//display all the employees with office code 1,3 and 4?
+SELECT COUNT(*)
+FROM
+(
+SELECT id_employee, COUNT(*) AS CNT
+FROM Department_Employee
+GROUP BY id_employee
+) AS T
+WHERE CNT > 1
+
+
