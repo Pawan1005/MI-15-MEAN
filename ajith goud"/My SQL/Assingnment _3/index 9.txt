@@ -1,0 +1,1 @@
+//delete all the records of course mechanical course from DUP_EMP table.?
