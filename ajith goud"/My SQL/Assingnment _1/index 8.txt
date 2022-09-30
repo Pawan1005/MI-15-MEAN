@@ -1,0 +1,29 @@
+//display the office code postalcode and city of country USA(use tableoffices)?
+select co.countryname, ci.cityname, ci.zipcode
+from country co
+cross apply (
+    select top (1) with ties ci.* 
+    from city ci 
+    where ci.countryid = co.countryid
+    order by ci.zipcode desc
+) ci
+
+
+select co.countryname, ci.cityname, ci.zipcode
+from country co
+inner join (
+    select ci.*, rank() over(partition by countryid order by zipcode desc) rn
+    from city ci
+) ci on ci.countryid = co.countryid
+
+
+select co.countryname, ci.cityname, ci.zipcode
+from country co as co
+inner join city as ci on ci.countryid = co.countryid
+where ci.zipcode = (
+    select max(c1.zipcode)
+    from city as ci1
+    where ci1.countryid = ci.country
+)
+
+

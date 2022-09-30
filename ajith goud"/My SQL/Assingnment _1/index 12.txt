@@ -1,0 +1,4 @@
+//display the customer details of the first two customerswhose firstname starts with j and stste is not null in descending order of creditlimit.?
+ORDER BY [reuestId] IS NULL DESC, [reuestId] DESC
+
+

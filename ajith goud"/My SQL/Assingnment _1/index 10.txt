@@ -1,0 +1,6 @@
+//dispaly the customer details of the customers whosefirst name starts with J and state is not null?
+select top(1) BookingLastName, BookingFirstName
+from bookingxx
+order by BookingTotal desc
+
+
