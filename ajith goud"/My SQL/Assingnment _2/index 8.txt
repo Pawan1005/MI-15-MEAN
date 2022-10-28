@@ -1,0 +1,2 @@
+//display the product code,name,product description and quantity of all the products whose product line is Motorcycles.?
+

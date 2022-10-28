@@ -1,0 +1,8 @@
+//insert 10 records in student table against various coourselds.-use multiple insert.?
+INSERT INTO Pet (OwnerID, PetName, DateOfBirth)
+VALUES (1, 'Luna', '2013-02-11'), 
+(4, 'Wally', '2014-09-28'), 
+(6, 'Bella', '2019-07-04'), 
+(12, 'Milo', '2017-03-15');
+
+

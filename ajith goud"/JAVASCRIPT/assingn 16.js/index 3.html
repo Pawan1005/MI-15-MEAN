@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 16 - Q3</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="h1" style="text-align: left;">This is a First image</h1>
+            <img src="./images/img1.jpg" height="300" width="300" id="getImage">   
+        </div><br>
+        <div>
+            <button onclick="imagefun()">Text Play</button>
+        </div>
+        
+        <script>
+            function imagefun() {
+                var Image_Id = document.getElementById('getImage');
+                if (Image_Id.src.match("./images/img1.jpg")) 
+                {
+                    Image_Id.src = "./images/img2.jpg";
+                    document.getElementById('h1').innerHTML = "This is a Second Image";
+                }
+                else 
+                {
+                    Image_Id.src = "./images/img3.jpg";
+                    document.getElementById('h1').innerHTML = "This is a Third Image";
+                }
+            }        
+        </script>
+    </body>
+</html>

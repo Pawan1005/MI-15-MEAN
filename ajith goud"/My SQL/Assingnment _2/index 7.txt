@@ -1,0 +1,14 @@
+//display the details of customers. who are from country france?
+SELECT country, 
+       industry
+FROM country_data
+WHERE (
+
+    industry = 'Wine' OR
+    industry = 'Beer' OR
+    (country = 'France' and industry = 'Cheese')
+
+)
+
+
+

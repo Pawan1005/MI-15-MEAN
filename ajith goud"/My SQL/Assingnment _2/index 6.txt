@@ -1,0 +1,6 @@
+//display the details of customers where the stste is null?
+SELECT Name,  ISNULL(Amount,0), ISNULL(Paid,0) as Paid
+FROM   Table_1  
+WHERE  ISNULL(Paid,0)  <> ISNULL(Amount,0)
+
+

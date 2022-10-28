@@ -1,0 +1,24 @@
+//insert the following values in course table course id course name 101 computers 102 electronics 103 mechanical 104 civil?
+create table #course(cid int identity(1,1)primary key,
+course varchar(20))
+
+insert into #course values('science'),('eng'),('maths'),('biology')
+cid  course
+1   science
+2   eng
+3   maths
+4   biology
+
+create table #student(id int identity(1001,1)primary key,
+studentName varchar(30), RollNO int,
+courseid int foreign key references #course(cid))
+
+
+insert into #student values('john',101,1),('ker',102,3),('ghm',103,2),  ('ahm',104,3)
+id     studentname   rollno courseid
+1001    john            101     1
+1002    ker             102     3
+1003    ghm             103     2
+1004    ahm             104     3
+
+

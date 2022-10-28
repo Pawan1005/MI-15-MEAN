@@ -1,0 +1,7 @@
+//display all the products whose productline is cars?
+Select productlines
+from  products
+where productsline= "Classic cars"
+and CAST(substring('productname', 1, 4) as SIGNED) =>1960 and CAST(substring('productname', 1, 4) as SIGNED)>=1970
+
+

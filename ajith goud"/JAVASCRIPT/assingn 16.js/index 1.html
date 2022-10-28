@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 16 - Q1</title>
+    </head>
+    <body>
+        <h1 id="h1" style="text-align: center;">This is an HTML Heading</h1><br><br>
+        <button type="button" onclick="myFunction()">Left</button>
+        <button type="button" onclick="myFunction1()">Right</button>
+        <button type="button" onclick="myFunction2()">Center</button>
+
+        <script> 
+        function myFunction() {
+            document.getElementById("h1").style.textAlign = "left";
+        }
+        function myFunction1() {
+            document.getElementById("h1").style.textAlign = "right";
+        }
+        function myFunction2() {
+            document.getElementById("h1").style.textAlign = "center";
+        }
+    </script>
+</body>
+</html>

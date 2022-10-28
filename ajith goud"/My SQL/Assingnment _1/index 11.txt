@@ -1,0 +1,4 @@
+//dispaly the customer details of the customers whosefirst name starts with J and state is not null in descending order pf creditlimit.?
+ORDER BY CTE.IS_NULL_Amount desc,Amount asc
+
+

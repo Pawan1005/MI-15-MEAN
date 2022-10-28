@@ -1,0 +1,4 @@
+//create a duplicate table of student table. name it DUP_EMP?
+SELECT TOP 0 * INTO student1 FROM student
+
+

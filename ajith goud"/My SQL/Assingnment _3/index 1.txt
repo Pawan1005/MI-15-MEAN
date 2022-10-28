@@ -1,0 +1,7 @@
+//insert  a record in student table 1 Amit 1234567890 9999833445 scuence 101 camp?
+insert into student_course(student_id,courseId)
+    select student_id, 300
+    from student_course
+    where course_id = 101;
+
+
