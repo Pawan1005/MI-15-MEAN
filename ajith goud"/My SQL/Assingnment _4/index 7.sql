@@ -1,0 +1,2 @@
+SELECT customers.email, count(order_id) as totalCount FROM customers
+INNER JOIN orders ON customers.customer_id = orders.customer_id where year(order_placed_date)=2018 group by customers.email order by totalCount  
