@@ -1,0 +1,36 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "Property dealing dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pawan1005/MI-15-MEAN.git"
+  },
+  "author": "Mrunal Itankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pawan1005/MI-15-MEAN/issues"
+  },
+  "homepage": "https://github.com/Pawan1005/MI-15-MEAN#readme",
+  "dependencies": {
+    "alert": "^5.1.1",
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "html": "^1.0.0",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-localstorage": "^2.2.1",
+    "node-popup": "^0.1.14",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "popups": "^1.1.3"
+  }
+}

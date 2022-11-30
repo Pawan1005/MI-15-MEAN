@@ -1,0 +1,3 @@
+select emp.empFname, emp.empLname, emp.empNumber, emp.empJobTitle, ofc.officeCode, ofc.city, ofc.country from employee as emp inner join offices as ofc on emp.empId = ofc.id;
+select emp.empFname, emp.empLname, emp.empNumber, emp.empJobTitle, ofc.officeCode, ofc.city, ofc.country from employee as emp inner join offices as ofc on emp.empId = ofc.id where empJobTitle = 'Sales_Rep';
+select emp.empFname, emp.empLname, emp.empNumber, emp.empJobTitle, ofc.officeCode, ofc.city, ofc.country from employee as emp inner join offices as ofc on emp.empId = ofc.id where country = 'USA';

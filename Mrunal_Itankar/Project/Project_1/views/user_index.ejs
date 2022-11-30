@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Details</title>
+</head>
+<body>
+    <table class="table table-bordered table-hover">
+        <tbody>
+            <% users.forEach(function(user){ %>
+                <tr>
+                    <td><%= user.srno %></td>
+                    <td><%= user.owner_name %></td>
+                    <td><%= user.mobileno %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.address %></td>
+                    <td><a href="edit/<%= user.srno %>"><button class="btn btn-sm btn-primary">Edit</button></a>
+                    <a href="delete/<%= user.srno %>"><button class="btn btn-sm btn-danger">Delete</button></a>
+                    </td>
+                </tr>
+                <% });%>
+                    <div class="add">
+                        <a href="/addrecord"><button class="btn btn-sm primary">Add</button></a>
+                    </div>
+        </tbody>
+    </table>
+</body>
+</html>

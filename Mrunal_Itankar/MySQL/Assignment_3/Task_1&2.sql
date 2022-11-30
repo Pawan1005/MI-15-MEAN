@@ -1,0 +1,2 @@
+insert into student values(1, 'Amit', '1234567890', '9999833445',101, 'science', 'camp','1996-12-02');
+insert into student values(1, 'Amit', '1234567890', '9999833445',null, 'science', 'camp','1996-12-02');

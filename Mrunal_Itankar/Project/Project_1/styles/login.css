@@ -1,9 +1,15 @@
 /* Login Page */
 body{
-    background-color: rgb(238,235,235);
     font-family: "Baloo Thambi 2", cursive;
-
 }
+.nav-link {
+    color: black;
+    font-weight: 600;
+  }
+  .navbar-brand {
+    color: black;
+    font-weight: 700;
+  }
 .login{
     text-align: center;
     width: 30%;
@@ -20,7 +26,18 @@ body{
     border: none;
     display: inline-block;
 }
+button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    text-decoration: none;
+   color: #212529;
+}
 .form-control{
     outline: none;
     border: none;
+}
+.navigation{
+    background-color: rgb(238,235,235);
 }
