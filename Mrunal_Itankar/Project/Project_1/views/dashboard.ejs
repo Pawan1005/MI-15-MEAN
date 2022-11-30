@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentOut</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <!-- injected side nav-->
+    <%- include('sidenav.ejs'); %>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" name="" id="" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                        <ion-icon name="person-circle-outline" class="user"></ion-icon>
+                        <%= oname %>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="login">Logout</a>
+                    </div>
+                  </div>                
+            </div>
+            <div class="propCount">
+                <h2 class="count border border-dark rounded-pill m-5 p-2">Total Count: <%= count %></h2>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="sidenav_toggle.js"></script>
+</body>
+</html>
