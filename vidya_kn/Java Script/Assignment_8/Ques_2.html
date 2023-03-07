@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ques_2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script>
+        var markArr = [];
+var sumArr = [];
+function addMarks() {
+  var a = parseInt(document.getElementById("userinput").value);
+  if (markArr.length < 8) {
+    if (a <= 100) {
+      markArr.push(a);
+    } else {
+      alert("Not allowed to enter marks more than 100.");
+    }
+  } else {
+    alert("Not allowed to enter subject marks more than 8.");
+  }
+}
+function showMarks() {
+  var list = "";
+  var sum = 0;
+  markArr.forEach(function (element, i) {
+    var calculation;
+    var index = i + 1;
+    calculation = parseInt(element + (20 / 100) * element);
+    sumArr.push(calculation);
+        list += "<li>Marks " + index + " : " + calculation + "</li>";
+    
+    document.getElementById("subjectMarks").innerHTML = list;
+    document.getElementById("displayBeforeSort").style.display = "block";
+  });
+}
+  function afterSortMarks(){
+    var sortedArray = quickSort(sumArr);
+  
+    var total = sortedArray.join(",");
+    document.getElementById("total").innerHTML = total;
+    document.getElementById("displayAfterSort").style.display = "block";
+  }
+function quickSort(sumArr){
+if (sumArr.length <= 1) {
+  return sumArr;
+  } else {
+        var leftArr = [];              
+        var rightArr = [];
+        var newArr = [];
+        var pivot = sumArr.pop();     
+        var length = sumArr.length;
+        for (var i = 0; i < length; i++) {
+           if (sumArr[i] <= pivot) {   
+              leftArr.push(sumArr[i]);      
+        } else {
+                rightArr.push(sumArr[i]);
+      }
+    }
+    return newArr.concat(quickSort(leftArr), pivot, quickSort(rightArr));   
+  }
+}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group mt-2">
+                <label for="text">Enter Marks:</label>
+                <input type="text" name="" id="userinput">
+            </div>
+            <button type="button" class="btn btn-outline-secondary" onclick="addMarks()">Add Marks</button> 
+            <button type="button" class="btn btn-outline-secondary" onclick="showMarks()">Before Sort Marks</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="afterSortMarks()">After Sort Marks</button>
+        </form>
+        <p style="display: none;" id="displayBeforeSort">Before Sort:</p>
+        <ul class="mt-2" id="subjectMarks"></ul>
+        <p style="display: none;" id="displayAfterSort">After sort: <span id="total"></span></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
