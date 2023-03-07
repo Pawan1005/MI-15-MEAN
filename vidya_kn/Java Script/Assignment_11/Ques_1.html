@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ques_1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script>
+        var markArr = [];
+function addMarks() {
+  var rollno = document.getElementById("userInputRollNo").value;
+  var marks = document.getElementById("userInputMarks").value;
+  if (markArr.length < 10) {
+    if (marks > 0 || marks <= 50 && marks != "") {
+      var calculation = parseInt(marks) + (20 / 100) * marks;
+      var stdrollmark = {};
+      stdrollmark.studentMarks = calculation;
+      stdrollmark.rollNo = rollno;
+      markArr.push(stdrollmark);  
+      console.log(markArr);
+      document.getElementById("userInputRollNo").value = "";
+      document.getElementById("userInputMarks").value = "";
+    } else {
+      alert("Error – Invalid Marks!!");
+    }
+  } else {
+    alert("Not allowed to enter marks for more than 10 subjects.");
+  }
+}
+function showTableMarks() {
+  var list = "";
+  markArr.forEach(function (element, i) {
+    list += "<tr><td>"+element.rollNo+"</td><td>"+element.studentMarks+"</td></tr>";
+  });
+  document.getElementById("tableFormateOutput").innerHTML = list;
+}
+function showMarks(){
+var roll = parseInt(document.getElementById("showRollNo").value);
+markArr.forEach(function(element, i){
+  if(element.rollNo == roll){
+document.getElementById("finalOutput").textContent = "Roll No. "+ roll + " has scored "+ element.studentMarks+ " marks.";
+  }
+  else{
+    document.getElementById("finalOutput").textContent = "No records found.";
+  }
+});
+}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group mt-2">
+                <label for="text">Roll No: </label>
+                <input type="number" name="" id="userInputRollNo">
+            </div>
+            <div class="form-group mt-2">
+                <label for="text">Enter Marks: </label>
+                <input type="text" name="" id="userInputMarks">
+            </div>
+            <button type="button" class="btn btn-outline-primary" onclick="addMarks()">Add Marks</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="showTableMarks()">Show Marks</button>
+        </form>
+        <table>
+            <tr>
+                <th>Roll No</th>
+                <th>Marks</th>
+            </tr>
+            <tbody id="tableFormateOutput"></tbody>
+        </table>
+        <input type="text" id="showRollNo" placeholder="Enter Roll No.">
+        <button type="button" class="btn btn-outline-info" onclick="showMarks()">Show</button>
+        <p id="finalOutput"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

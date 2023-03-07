@@ -1,0 +1,42 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Ques_3</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    </head>
+    <script>
+        var image = 1;
+function imageChange() {
+  image += 1;
+  if (image > 3) {
+    image = 1;
+  }
+  var a = document.getElementsByClassName("content");
+  for (i of a) {
+    i.style.display = "none";
+  }
+  document.getElementById("pic" + image).style.display = "block";
+}
+    </script>
+    <body>
+            <div class="content mx-3" id="pic1">
+                <h1 style="text-align: left;">Sunrise</h1>
+                <img src="C:\Users\Vidya\Downloads\sunrise.jpeg" alt="image" style="height: 334px; width: 200px;">
+            </div>
+            <div class="content mx-3" style="display: none;" id="pic2">
+                <h1 style="text-align: left;">Sunset</h1>
+                <img src="C:\Users\Vidya\Downloads\sunset.jpeg" alt="image" style="height: 300px; width: 200px;">
+            </div>
+            <div class="content mx-3" style="display: none;" id="pic3">
+                <h1 style="text-align: left;">Moonlight</h1>
+                <img src="C:\Users\Vidya\Downloads\moonlight.jpeg" alt="image" style="height: 300px; width: 200px;">
+            </div>
+            <button type="button" class="mx-3 mt-2" onclick="imageChange()">Play</button>
+    
+
+</body>
+</html> 
